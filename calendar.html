@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - FocusTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="index.html" class="sidebar-logo"><i class='bx bxs-analyse'></i></a>
+        <ul class="sidebar-menu">
+            <li><a href="index.html" title="Home"><i class='bx bxs-dashboard'></i></a></li>
+            <li><a href="subjects.html" title="Subjects"><i class='bx bx-book-bookmark'></i></a></li>
+            <li><a href="todo.html" title="To-Do List"><i class='bx bx-list-check'></i></a></li>
+            <li><a href="calendar.html" title="Calendar"><i class='bx bx-calendar'></i></a></li>
+            <li><a href="timer.html" title="Study Timer"><i class='bx bx-timer'></i></a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="header">
+            <h1>Calendar</h1>
+            <p>Keep track of important dates and events.</p>
+        </div>
+        
+        <div id="calendar-container" class="card">
+            <!-- js/calendar.js will populate this area -->
+        </div>
+
+        <div class="modal-overlay" id="event-modal">
+            <div class="modal-content">
+                <button class="modal-close"><i class='bx bx-x'></i></button>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

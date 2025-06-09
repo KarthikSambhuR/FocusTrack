@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects - FocusTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="index.html" class="sidebar-logo"><i class='bx bxs-analyse'></i></a>
+        <ul class="sidebar-menu">
+            <li><a href="index.html" title="Home"><i class='bx bxs-dashboard'></i></a></li>
+            <li><a href="subjects.html" title="Subjects"><i class='bx bx-book-bookmark'></i></a></li>
+            <li><a href="todo.html" title="To-Do List"><i class='bx bx-list-check'></i></a></li>
+            <li><a href="calendar.html" title="Calendar"><i class='bx bx-calendar'></i></a></li>
+            <li><a href="timer.html" title="Study Timer"><i class='bx bx-timer'></i></a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="header">
+            <h1>My Subjects</h1>
+            <p>An overview of your current courses and performance.</p>
+        </div>
+        <div class="grid-container" id="subjects-container">
+            <!-- js/subjects.js will populate this area with simplified cards -->
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/subjects.js"></script>
+</body>
+</html>

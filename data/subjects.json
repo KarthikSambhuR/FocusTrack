@@ -1,0 +1,44 @@
+[
+    {
+      "name": "High Fidelity Wireframes",
+      "code": "UI/UX-301",
+      "grade": 95,
+      "lessons": 2,
+      "duration": 60
+    },
+    {
+      "name": "Advanced Calculus",
+      "code": "MATH-410",
+      "grade": 82,
+      "lessons": 5,
+      "duration": 50
+    },
+    {
+      "name": "Quantum Physics",
+      "code": "PHY-350",
+      "grade": 76,
+      "lessons": 4,
+      "duration": 75
+    },
+    {
+      "name": "Modernist Literature",
+      "code": "LIT-220",
+      "grade": 88,
+      "lessons": 3,
+      "duration": 60
+    },
+    {
+      "name": "Data Structures",
+      "code": "CS-212",
+      "grade": 91,
+      "lessons": 6,
+      "duration": 50
+    },
+    {
+      "name": "Organic Chemistry",
+      "code": "CHEM-201",
+      "grade": 68,
+      "lessons": 4,
+      "duration": 90
+    }
+  ]

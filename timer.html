@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer - FocusTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="index.html" class="sidebar-logo"><i class='bx bxs-analyse'></i></a>
+        <ul class="sidebar-menu">
+            <li><a href="index.html" title="Home"><i class='bx bxs-dashboard'></i></a></li>
+            <li><a href="subjects.html" title="Subjects"><i class='bx bx-book-bookmark'></i></a></li>
+            <li><a href="todo.html" title="To-Do List"><i class='bx bx-list-check'></i></a></li>
+            <li><a href="calendar.html" title="Calendar"><i class='bx bx-calendar'></i></a></li>
+            <li><a href="timer.html" title="Study Timer"><i class='bx bx-timer'></i></a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="header">
+            <h1>Study Timer</h1>
+            <p>Use the Pomodoro Technique to enhance your focus.</p>
+        </div>
+
+        <audio id="alarm-sound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto" style="display: none;"></audio>
+
+        <div id="timer-container" class="card">
+            <button class="timer-settings-toggle"><i class='bx bx-cog'></i></button>
+            <div class="timer-settings-panel">
+                <div class="settings-grid">
+                    <div>
+                        <label for="focus-input">Focus</label>
+                        <input type="number" id="focus-input" min="1">
+                    </div>
+                    <div>
+                        <label for="short-break-input">Short Break</label>
+                        <input type="number" id="short-break-input" min="1">
+                    </div>
+                    <div>
+                        <label for="long-break-input">Long Break</label>
+                        <input type="number" id="long-break-input" min="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timer-modes">
+                <button id="focus-btn" class="active">Focus</button>
+                <button id="short-break-btn">Short Break</button>
+                <button id="long-break-btn">Long Break</button>
+            </div>
+            <div id="time-display">25:00</div>
+            <div id="session-info">Session 1 of 4</div>
+            <div class="timer-controls">
+                <button id="start-pause-btn" class="btn">START</button>
+                <button id="reset-btn"><i class='bx bx-reset'></i></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>
