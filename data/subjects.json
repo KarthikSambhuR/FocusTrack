@@ -2,7 +2,7 @@
   {
     "name": "Linear Algebra and Probability",
     "code": "24MAT104",
-    "grade": 92
+    "grade": 99
   },
   {
     "name": "Fundamentals of Engineering Physics",
@@ -12,26 +12,26 @@
   {
     "name": "Essential Foundations of Digital Logic",
     "code": "24ESC160",
-    "grade": 95
+    "grade": 90
   },
   {
     "name": "Computer Programming in C & Shell Scripting",
     "code": "24ESC126",
-    "grade": 93
+    "grade": 99
   },
   {
     "name": "Computer Hardware Essentials",
     "code": "24ESC128",
-    "grade": 89
+    "grade": 80
   },
   {
     "name": "Engineering Economics",
     "code": "24HUT100",
-    "grade": 90
+    "grade": 75
   },
   {
     "name": "Foundations of Web Design",
     "code": "24MNC110",
-    "grade": 94
+    "grade": 99
   }
 ]
