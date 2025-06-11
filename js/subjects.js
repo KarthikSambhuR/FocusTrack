@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 container.innerHTML = '<p>No subjects found.</p>';
                 return;
             }
-            container.innerHTML = ''; // Clear loading state
+            container.innerHTML = '';
             data.forEach(subject => {
                 const card = document.createElement('div');
                 card.className = 'card subject-card';

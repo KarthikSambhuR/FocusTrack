@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 events[dateStr].push({ text });
                 saveEvents();
                 renderCalendar();
-                showModal(dateStr); // Refresh modal to show newly added event
+                showModal(dateStr);
             }
         };
 
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 saveEvents();
                 renderCalendar();
-                showModal(dateStr); // Refresh modal to show updated list
+                showModal(dateStr);
             };
         });
     };

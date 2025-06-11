@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- DOM Elements ---
     const timeDisplay = document.getElementById('time-display');
     const startPauseBtn = document.getElementById('start-pause-btn');
     const resetBtn = document.getElementById('reset-btn');
@@ -16,16 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if(!timeDisplay) return;
 
-    // --- State Variables ---
     let settings = JSON.parse(localStorage.getItem('timerSettings')) || { focus: 25, short: 5, long: 15 };
-    let currentMode = 'focus'; // 'focus', 'short-break', 'long-break'
+    let currentMode = 'focus';
     let timeLeft = settings.focus * 60;
     let timerInterval = null;
     let isRunning = false;
     let sessionCount = 0;
     const SESSIONS_UNTIL_LONG_BREAK = 4;
 
-    // --- Functions ---
     const saveSettings = () => localStorage.setItem('timerSettings', JSON.stringify(settings));
 
     const updateDisplay = () => {
@@ -55,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modeButtons.forEach(btn => btn.classList.remove('active'));
         document.getElementById(`${mode}-btn`).classList.add('active'); 
         
-        const settingsKey = mode.split('-')[0]; // 'focus', 'short', 'long'
+        const settingsKey = mode.split('-')[0];
         timeLeft = settings[settingsKey] * 60;
         updateDisplay();
     };
@@ -81,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             switchMode('focus');
         }
         
-        startTimer(); // Automatically start the next session
+        startTimer();
     };
 
     const startTimer = () => {
@@ -107,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         switchMode('focus');
     };
 
-    // --- Event Listeners ---
     startPauseBtn.addEventListener('click', () => isRunning ? stopTimer() : startTimer());
     resetBtn.addEventListener('click', hardReset);
 
@@ -127,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     settingsToggle.addEventListener('click', () => settingsPanel.classList.toggle('open'));
 
-    for (const key in inputs) { // key will be 'focus', 'short', 'long'
+    for (const key in inputs) {
         inputs[key].addEventListener('change', (e) => {
             let value = parseInt(e.target.value);
             if (!isNaN(value) && value > 0) {
@@ -146,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Initial Setup ---
     loadSettings();
     updateDisplay();
 });
